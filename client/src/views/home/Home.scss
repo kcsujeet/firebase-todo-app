@@ -1,0 +1,33 @@
+.right-shadow{
+    box-shadow: 5px 0px 15px 0px lightgrey;
+}
+
+.menu-list{
+    li, a{
+        padding: 1rem !important;
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .menu-list{
+        li, a{
+            &.active, &:hover{
+                color: white;
+                background: var(--purple)
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .menu-list{
+        li, a{
+            &.active, &:hover{
+                border-bottom: 5px solid var(--purple);
+                color: var(--purple);
+            }
+        }
+    }
+  }

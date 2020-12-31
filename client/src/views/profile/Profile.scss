@@ -1,0 +1,62 @@
+.profile-list{
+    li{
+        min-height: 3rem;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.profile-picture{
+    .outer{
+        position: relative;
+    }
+    .inner{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            position: relative;
+            input{
+                cursor: pointer;
+                opacity: 0;
+                overflow: hidden;
+                width: 3.5rem;
+                height: 3.5rem;
+                z-index: 1000;
+            }    
+            label{
+                position: absolute;
+                pointer-events: none;
+                top: 0;
+                left: 0;
+                svg{
+                    border-radius: 50%;
+                    border: 1px solid white;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    padding: .8rem;
+                    fill: white;
+                    background: var(--purple);
+                }
+                .chakra-spinner{
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    padding: .8rem;
+                    color: var(--purple)
+                }
+            }
+            &:hover{
+                label{
+                    svg{
+                        background: lightgray;
+                    }
+                }
+            }
+        }
+    }
+}

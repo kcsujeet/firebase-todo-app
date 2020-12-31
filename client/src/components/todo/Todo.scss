@@ -1,0 +1,12 @@
+.todo-body{
+    display: flex;
+    align-items: center;
+    height: 8rem;
+    border-radius: .5rem;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    transition: box-shadow .3s ease-in-out;
+    &:hover{
+        box-shadow: 3px 7px 10px 0px lightgray;
+    }
+}
